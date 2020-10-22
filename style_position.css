@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.first-box {
+    background-color: white;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px;
+}
+
+.top-box {
+    background-color: cornflowerblue;
+    border: 2px solid black;
+    height: 210px;
+    margin: 10px 25px 10px 25px;
+}
+
+.one {
+    background-color: blue;
+    border: 2px solid black;
+    height: 150px;
+    width: 250px;
+    margin: 25px;
+    float: left;
+}
+
+.botom-box {
+    background-color: cornflowerblue;
+    border: 2px solid black;
+    height: 210px;
+    margin: 10px 25px 10px 25px;
+}
+
+.two {
+    background-color: blue;
+    border: 2px solid black;
+    height: 150px;
+    width: 250px;
+    margin: 25px;
+    float: left;
+}
+
+.second-box {
+    background-color: coral;
+    border: 2px solid black;
+    height: 275px;
+    margin: 20px 10px;
+}
+
+.left {
+    background-color: blue;
+    border: 2px solid black;
+    height: 240px;
+    width: 520px;
+    margin: 15px;
+    float: left;
+}
+
+.right {
+    background-color: blue;
+    border: 2px solid black;
+    height: 240px;
+    width: 520px;
+    margin: 15px 15px 15px 0px;
+    float: left;
+}
+
+.border-left {
+    border: 2px solid white;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    float: left;
+}
+
+.box-top-left {
+    background-color: rgb(93, 212, 119);
+    height: 70px;
+    width: 165px;
+    margin: 15px;
+    float: left;
+}
+
+.box-one {
+    background-color: black;
+    height: 51px;
+    width: 60px;
+    margin: 10px;
+    float: left;
+}
+
+.box-botom-left {
+    background-color: rgb(93, 212, 119);
+    height: 85px;
+    width: 165px;
+    margin: 0px 15px;
+    float: left;
+}
+
+.box-two {
+    background-color: black;
+    height: 65px;
+    width: 40px;
+    margin: 10px 10px 10px 5px;
+    float: left;
+}
+
+.border-right {
+    border: 2px solid white;
+    height: 200px;
+    width: 200px;
+    margin: 15px 15px 15px 40px;
+    float: left;
+}
+
+.box-three {
+    background-color: black;
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+    float: left;
+}
+
+.box-top-right {
+    background-color: rgb(93, 212, 119);
+    height: 170px;
+    width: 165px;
+    margin: 15px;
+    float: left;

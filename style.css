@@ -12,30 +12,76 @@ button {
   background-color: transparent;
 }
 
-header,footer,aside,main,nav {
+header,footer,section,aside,main,nav {
   display: block;
 }
 
 body {
-  background-color: #d3f0fd;
 }
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-color: seagreen;
+  font-size: 30px;
+  color: white;
+  border: 1px solid white;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .header {
-  background-color: #b6b4b4;
   padding: 25px;
-  text-align: center;
   margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
 }
 
-.title {
-  color: #ffffff;
-  text-transform: uppercase;
+.header-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.header-nav li {
+  margin-left: 15px;
+  padding: 10px;
 }
+
+.header-nav li:first-child {
+  margin-left: 0px;
+}
+
+.header-nav li:hover {
+  background-color: violet;
+  color: white;
+  cursor: pointer;
+ 
+}
+
 
 .nav {background-color:#eb4865;
   padding: 15px 25px;
   text-align: center;
-  margin-bottom: 15px;
+}
+
+.nav:hover {
+  animation: nav 0.5s forwards;
+}
+
+.title {
+  color: #ffffff;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 5;
 }
 
 .container {
@@ -47,10 +93,189 @@ body {
   background-color: #b59b9b;
 }
 
+.sidebar:hover {
+  transition: 0.3s;
+  transform: rotate(30deg);
+  
+}
+
 .sidebar .head {
   margin-bottom: 15px;
 }
 
 .sidebar .title {
   font-size: 28px;
+}
+
+.hero {
+  position: relative;
+  min-height: 250px;
+  background-image: url(https://www.vrfitnessinsider.com/wp-content/uploads/2017/09/developer-image.jpg);
+  background-size: cover;
+  background-position: 0px center;
+  background-attachment: fixed;
+  padding-top: 150px;
+}
+
+.hero:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0%;
+}
+
+.hero-title {
+  padding: 15px;
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.hero-text {
+  position: absolute;
+  top: -45px;
+  left: 44%;
+}
+
+.block {
+  padding: 300px;
+}
+
+.center {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.center:hover {
+  background-color: maroon;
+}
+
+.div1 {
+  background-color: royalblue;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 200px;
+  right: 200px;
+}
+
+.div1:hover {
+  background-color: midnightblue;
+}
+
+.div2 {
+  background-color: orange;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 200px;
+  left: 200px;
+}
+
+.div2:hover {
+  background-color: saddlebrown;
+}
+
+.div3 {
+  background-color: orchid;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 200px;
+  right: 200px;
+}
+
+.div3:hover {
+  background-color: purple;
+}
+
+.div4 {
+  background-color: yellowgreen;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+
+.div4:hover {
+  background-color: forestgreen;
+}
+
+.text {
+  background-color: green;
+  position: relative;
+  top:-30px;
+  z-index: 1;
+}
+
+.box {
+  padding: 100px;
+}
+.one {
+  background-color: mediumvioletred;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  z-index: 5;
+}
+
+.two {
+  background-color: midnightblue;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 2;
+}
+
+.sidebar-list {
+  list-style: none;
+  float: left;
+
+}
+
+.sidebar-list a {
+  padding: 5px 10px;
+  color: white;
+  display: block;
+}
+
+.sidebar-list a:hover {
+  text-decoration: underline;
+}
+
+.sidebar {
+  float: left;
+}
+
+.logo {
+  float: left;
+  max-width: 100px;
+  border-radius: 3px;
+}
+
+ul {
+  list-style: none;
+}
+
+
+
+.clearfix:after {
+clear: both;
+content: "" ;
+display: block;
 }
