@@ -42,6 +42,7 @@ body {}
 }
 
 .header-nav li {
+  font-size: 20px;
   margin-left: 15px;
   padding: 10px;
 }
@@ -54,13 +55,7 @@ body {}
   background-color: violet;
   color: white;
   cursor: pointer;
-}
-
-.title {
-  color: #ffffff;
-  position: relative;
-  text-transform: uppercase;
-  z-index: 5;
+  border-radius: 4px;
 }
 
 .logo {
@@ -78,18 +73,10 @@ body {}
   animation: nav 0.5s forwards;
 }
 
-.sidebar {
-  padding: 15px;
-  width: 300px;
-  background-color: #b59b9b;
-}
-
-.sidebar .head {
-  margin-bottom: 15px;
-}
-
-.sidebar .title {
+.title-nav {
   font-size: 28px;
+  color: white;
+  text-transform: uppercase;
 }
 
 .hero {
@@ -122,32 +109,82 @@ body {}
   z-index: 10;
 }
 
-.hero-text {
-  position: absolute;
-  top: -45px;
-  left: calc(50% - 70px);
-}
-
-.sidebar-list {
-  list-style: none;
-}
-
-.sidebar-list a {
-  padding: 5px 10px;
-  color: white;
-  display: block;
-}
-
-.sidebar-list a:hover {
-  text-decoration: underline;
+.container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .sidebar {
-  float: left;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 25%;
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-.clearfix:after {
-clear: both;
-content: "" ;
-display: block;
+.title-sidebar {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.sidebar-list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  color: black;
+  font-size: 20px;
+}
+
+.sidebar-list li:hover {
+  background-color: violet;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 75%;
+}
+
+.title-main {
+  display: flex;
+  font-size: 28px;
+  color: black;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.article li {
+  text-align: center;
+  margin-top: 25px;
+  padding: 10px;
+  color: black;
+  font-size: 20px;
+}
+
+.article li:hover {
+  background-color: violet;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+}
+
+.footer {background-color:#eb4865;
+  padding: 15px 25px;
+  text-align: center;
+}
+
+.title-footer {
+  font-size: 28px;
+  color: white;
+  text-transform: uppercase;
 }
