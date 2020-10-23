@@ -5,19 +5,47 @@
 	 <title>My project</title>
 	 <meta name="description" content="My test desc" /> 
    <meta name="keywords" content="test, desc, html" />
-   <link type="text/css" rel="stylesheet" media="all" href="test_git/style.css" />
+   <link type="text/css" rel="stylesheet" href="style.css" />
   </head>
   <body>
-   <header><h1>Header</h1></header>
-   <nav><h2>Navigation</h2></nav>
-   <div>
-     <aside><h3>Sidebar</h3></aside>
-     <main>
-       <h3>Main</h3>
-       <article><h3>Article</h3></article>
-       <article><h3>Article</h3></article>
+   <header class="header">
+     <img class="logo" 
+       src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR5m06mJsbTHNeUE8yj1Di5zQ6GReGTdyc0Ow&usqp=CAU" 
+       alt="logo"
+     />
+     <ul class="header-nav">
+       <li>About</li>
+       <li>Portfolio</li>
+       <li>Contact</li>
+     </ul>
+   </header>
+   <nav class="nav">
+     <h2 class="title-nav">navigation</h2>
+   </nav>
+   <section class="hero">
+     <p class="hero-title">Hello Js Developer</p>
+   </section>
+   <div class="container">
+     <aside class="sidebar">
+       <div class="head">
+         <h3 class="title-sidebar">sidebar</h3>
+       </div>
+       <ul class="sidebar-list">
+         <li>About</li>
+         <li>Portfolio</li>
+         <li>Contact</li>
+       </ul>
+     </aside>
+     <main class="main">
+       <h3 class="title-main">main</h3>
+       <ul class="article">
+         <li>Article</li>
+         <li>Article</li>
+       </ul>   
      </main>
    </div>
-   <footer><h4>Footer</h4></footer>
+   <footer class="footer">
+     <h4 class="title-footer">Footer</h4>
+   </footer>
   </body>		
 </html>
