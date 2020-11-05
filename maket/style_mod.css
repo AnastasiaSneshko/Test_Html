@@ -1,0 +1,290 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+  
+a{
+  text-decoration: none;
+}
+  
+ul {
+  list-style: none;
+}
+  
+button {
+  border: none;
+  background-color: transparent;
+}
+  
+header,footer,section,aside,main,nav {
+  display: block;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: black;
+  display: flex;
+}
+
+.header-logo {
+	text-transform: uppercase;
+	color: white;
+	font-weight: 800;
+	font-size: 24px;
+	cursor: pointer;
+	margin-top: 56px;
+	margin-left: 12%;
+}
+
+nav {
+	margin-top: 56px;
+	margin-left: 29%;
+}
+
+.topnav a {
+	color: white;
+	text-align: center;
+	padding: 12px 16px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.topnav a :hover{
+	border-bottom: 3px solid #fcac45;
+}
+
+.topnav .icon {
+	display: none;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+main .main-welcome {
+	background-color: black;
+	text-align: center;
+	padding: 200px 0 410px 0;
+}
+
+main .main-welcome p {
+	color: #d4d4d4;
+	font-size: 20px;
+}
+
+main .main-welcome h1 {
+	color: #999999;
+	font-size: 44px;
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+.my-company {
+	color: #fcac45;
+	text-transform: uppercase;
+	font-size: 44px;
+	font-weight: bold;
+}
+
+.text {
+	font-weight: bold;
+}
+
+.wrapper {
+	width: 76%;
+	margin: 0 auto;
+}
+
+main .main-about {
+	display: flex;
+	padding: 100px 0 100px 0;
+}
+
+.about-right {
+	margin-left: 175px;
+}
+
+.about-right h1 {
+	display: inline-block;
+	border-bottom: 3px solid #fcac45;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+	font-size: 34px;
+	font-weight: lighter;
+}
+
+.about {
+	font-size: 34px;
+	font-weight: 900;
+}
+
+.about-right p {
+	margin: 30px 0 50px 0;
+	color: #6c6c6c;
+}
+
+.about-right li {
+	background: url(img/marc.png) 0px no-repeat;
+	padding-left: 25px;
+	font-style: italic;
+	color: #6c6c6c;
+	margin-top: 10px;
+}
+
+.point {
+	font-style: normal;
+	font-weight: 900;
+}
+
+.mv-100 {
+	min-width: 100%;
+}
+
+.main-team {
+	background-color: black;
+	text-align: center;
+	padding: 100px 0 165px 0;
+	color: white;
+}
+
+.main-team h1 {
+	font-size: 44px;
+	padding-bottom: 30px;
+	text-transform: uppercase;
+}
+
+.line {
+	width: 100px;
+	height: 3px;
+	background-color: #fcac45;
+	position: relative;
+	left: 45.5%;
+	margin-bottom: 85px;
+}
+
+.photo {
+	background-color: #d7d7d7;
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	margin: 20px auto;
+}
+
+.team-cards {
+	display: flex;
+}
+
+.card {
+	margin: 0 40px;
+}
+
+.name {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.position {
+	font-size: 16px;
+	font-weight: lighter;
+}
+
+.about-position {
+	font-size: 14px;
+	margin-top: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+	nav {
+		margin-left: 20%;
+	}
+}
+
+@media screen and (max-width: 1105px) {
+	nav {
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 1010px) {
+	.topnav a {
+		display: none;
+	}
+	.topnav a.icon {
+		float: right;
+		margin-top: -17px;
+		display: block;
+		color: white;
+		font-size: 25px;
+	}
+	nav {
+		width: 100%;
+	}
+  .topnav.responsive {
+	position: relative;
+	top: 50px;
+	left: -200px;
+  }
+  header .topnav.responsive {
+	height: 340px;
+  }
+  .topnav.responsive a.icon {
+	position: absolute;
+	top: -50px;
+	right: -200px;
+  }
+  .topnav.responsive a {
+	float: none;
+	display: block;
+	text-align: left;
+ }
+
+
+ main .main-welcome {
+	 padding: 50px 0 50px 0;
+ }
+ main .main-welcome p {
+	 font-size: 14px;
+ }
+ main .main-welcome h1 {
+	font-size: 25px;
+}
+.mv-100 {
+	max-width: 100%;
+}
+.main-about {
+	flex-direction: column;
+}
+.about-right {
+	text-align: center;
+	margin-left: 0;
+}
+.about-right li {
+	text-align: left;
+}
+.about-right h1 {
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+
+.team-cards {
+	flex-direction: column;
+}
+}
