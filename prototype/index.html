@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="UTF-8" />
+   <title>My project</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="My test desc" />
+   <meta name="keywords" content="test, desc, html" />
+   <link type="text/css" rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   <header class="header">
+     <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR5m06mJsbTHNeUE8yj1Di5zQ6GReGTdyc0Ow&usqp=CAU" alt="logo"/>
+     <div class="header-nav">
+       <div>About</div>
+       <div>Portfolio</div>
+       <div>Contact</div>
+     </div>
+     <button class="mobile-button">
+       <div class="line"></div>
+     </button>
+   </header>
+   <nav class="nav">
+     <button class="nav-button"></button>
+     <h2 class="title-nav">navigation</h2>
+   </nav>
+   <section class="hero">
+     <p class="hero-title">Hello Js Developer</p>
+   </section>
+   <div class="container">
+     <div class="sidebar">
+       <div class="sidebar-title">sidebar</div>
+       <div class="sidebar-list">
+         <div>About</div>
+         <div>Portfolio</div>
+         <div>Contact</div>
+       </div>
+     </div>
+     <main class="main">
+       <h4 class="main-title">Main</h4>
+       <article class="article-h">Article</article> 
+       <p class="article-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+       <article class="article-h">Article</article>   
+       <p class="article-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p> 
+     </main>
+   </div>
+   <footer class="footer">
+     <h4 class="title-footer">Footer</h4>
+   </footer>
+  </body>
+  <script>
+    const button = document.querySelector(".mobile-button");
+    const nav = document.querySelector(".header-nav");
+    button.addEventListener("click", () => {
+      nav.classList.toggle("active");
+      button.classList.toggle("active");
+    });
+  </script>
+</html>

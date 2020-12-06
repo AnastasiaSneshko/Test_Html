@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+header,footer,aside,section,main,nav {
+  display: block;
+}
+
+/* Header */
+.header {
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+  padding: 10px 25px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  float: left;
+  max-width: 100px;
+  border-radius: 3px;
+}
+
+.header-nav {
+  text-align: center;
+  display: flex;
+  float: right;
+}
+
+.header-nav div {
+  margin-left: 10px;
+  padding: 10px;
+  transition: background-color 0.3s linear;
+}
+
+.header-nav div:hover {
+  background-color: #eb4865;
+  color: white;
+  border-radius: 4px;
+}
+
+.mobile-button:before {
+  position: absolute;
+  border-radius: 3px;
+  width: 22px;
+  height: 2px;
+  background-color: grey;
+  content: "";
+  top: 50%;
+  left: 50%;
+  margin-top: 6px;
+  transform: translateX(-50%);
+}
+
+.mobile-button {
+  display: none;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+}
+
+.mobile-button:after {
+  position: absolute;
+  border-radius: 3px;
+  width: 22px;
+  height: 2px;
+  background-color: grey;
+  content: "";
+  top: 50%;
+  left: 50%;
+  margin-top: -8px;
+  transform: translateX(-50%);
+}
+
+.line {
+  position: absolute;
+  border-radius: 3px;
+  width: 22px;
+  height: 2px;
+  background-color: grey;
+  top: 50%;
+  left: 50%;
+  margin-top: -1px;
+  transform: translateX(-50%);
+}
+
+/* Navigation */
+.nav {
+  background-color: #eb4865;
+  padding: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+}
+
+.nav-button {
+  display: none;
+  cursor: pointer;
+	font-size: 0;
+	color: transparent;
+	position: absolute;
+  top: 20px;
+  right: 20px;
+  transform: rotate(-135deg);
+}
+
+.nav-button:after {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-top: 3px solid white;
+	border-left: 3px solid white;
+}
+
+.title-nav {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  background-image: url("https://www.vrfitnessinsider.com/wp-content/uploads/2017/09/developer-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px center;
+  background-attachment: fixed;
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(2 15 50 / 0.6);
+  top: 0;
+}
+
+.hero-title {
+  padding: 15px;
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Sidebar */
+.container {
+  display: flex;
+}
+
+.sidebar {
+  padding: 25px 10px;
+  width: 30%;
+  background-color: #ccc;
+  text-align: center;
+}
+
+.sidebar-title {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.sidebar-list div {
+  margin-top: 20px;
+  padding: 5px 0;
+  font-size: 20px;
+  transition: background-color 0.3s linear;
+}
+
+.sidebar-list div:first-child {
+  margin-top: 0;
+}
+
+.sidebar-list div:hover {
+  background-color: white;
+  border-radius: 4px;
+}
+
+/* Main */
+.main {
+  padding: 25px;
+}
+
+.main-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.article-h {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.article-p {
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.article-p:last-child {
+  margin-bottom: 0;
+}
+
+/* Footer */
+.footer {
+  padding: 15px 0;
+  background-color: #e5e5e5;
+  color: rgb(177, 173, 173);
+  text-align: center;
+}
+
+.title-footer{
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    padding: 10px 15px;
+  }
+
+  .header-nav {
+    transition: 0.3s;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 76px;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+  }
+
+  .hero {
+    min-height: 300px;
+    background-position: -340px 8px;
+  }
+
+  .sidebar {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    top: 148px;
+    z-index: 10;
+  }
+
+  .mobile-button {
+    display: block;
+  }
+
+  .nav-button {
+    display: block;
+  }
+
+  .header-nav.active {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-title {
+    font-size: 30px;
+  }
+}

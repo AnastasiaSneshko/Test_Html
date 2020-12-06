@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-		<title>Model</title>
+    <title>Model</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="model" />
 		<meta name="keywords" content="model" />
     <link type="text/css" rel="stylesheet" href="style.css" />
@@ -20,9 +21,9 @@
 					<a class="header-link" href="#service">Service</a>
 					<a class="header-link" href="#">Work</a>
 					<a class="header-link" href="#">Blog</a>
-					<a class="header-link" href="#">Contact</a>
-					<a href="#"><img src="img/shop-cart.png" alt="cart"></a>
-					<a href="#"><img src="img/mag-class.png" alt="glass"></a>
+          <a class="header-link" href="#">Contact</a>
+          <a class="header-link-icon" href="#"><i class="fas fa-shopping-cart"></i></a>
+          <a class="header-link-icon" href="#"><i class="fas fa-search"></i></a>
 				</nav>
 			</div>
 		</div>
@@ -35,10 +36,10 @@
         <a class="btn" href="#">Learn More</a>
       </div>
       <div class="intro-slider">
-        <div class="slider-item active"><span class="bold_item">01 </span>inrto</div>
-        <div class="slider-item"><span class="bold_item">02 </span>work</div>
-        <div class="slider-item"><span class="bold_item">03 </span>about</div>
-        <div class="slider-item"><span class="bold_item">04 </span>contacts</div>
+        <div class="slider-item active"><span class="bold_item">01 </span><span class="text-slid">inrto</span></div>
+        <div class="slider-item"><span class="bold_item">02 </span><span class="text-slid">work</span></div>
+        <div class="slider-item"><span class="bold_item">03 </span><span class="text-slid">about</span></div>
+        <div class="slider-item"><span class="bold_item">04 </span><span class="text-slid">contacts</span></div>
       </div>
     </div>
   </div>
@@ -508,7 +509,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
-        <div class="footer-col">
+        <div class="social-col">
           <div class="footer-logo">MoGo</div>
           <p class="footer-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <div class="footer-social">
@@ -526,11 +527,45 @@
             </div>
           </div>
           <form class="subscribe" action="/" method="post">
-            <input class="subscribe-input" type="email" placeholder="Your Email..">
+            <input class="subscribe-input" type="email" name="name" placeholder="Your Email..">
             <button class="subscribe-button" type="submit">Subsribe</button>
           </form>
         </div>
+        <div class="blogs-col">
+          <p class="blogs-text">blogs</p>
+          <div class="blogs-items">
+            <img class="blogs-image" src="img/foot1.png" alt="fot-img">
+            <div class="blogs-title">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+            <div class="blogs-date">Jan 9, 2016</div>
+          </div>
+          <div class="blogs-items">
+            <img class="blogs-image" src="img/foot2.png" alt="fot-img">
+            <div class="blogs-title">Consectetur adipiscing elit, sed do eiusmod tempor</div>
+            <div class="blogs-date">Jan 9, 2016</div>
+          </div>
+          <div class="blogs-items">
+            <img class="blogs-image" src="img/foot3.png" alt="fot-img">
+            <div class="blogs-title">sed do eiusmod tempor incididunt ut labore</div>
+            <div class="blogs-date">Jan 9, 2016</div>
+          </div>
+        </div>
+        <div class="instagram-col">
+          <p class="insta-title">instagram</p>
+          <div class="instagram">
+            <a class="insta-images" href="#" target="_blank"><img src="img/inst1.png" alt="inst"></a>
+            <a class="insta-images" href="#" target="_blank"><img src="img/inst2.png" alt="inst"></a>
+            <a class="insta-images" href="#" target="_blank"><img src="img/inst3.png" alt="inst"></a>
+            <a class="insta-images" href="#" target="_blank"><img src="img/inst4.png" alt="inst"></a>
+            <a class="insta-images" href="#" target="_blank"><img src="img/inst5.png" alt="inst"></a>
+            <a class="insta-images" href="#" target="_blank"><img src="img/inst6.png" alt="inst"></a>
+            <a class="insta-images" href="#" target="_blank"><img src="img/inst7.png" alt="inst"></a>
+            <a class="insta-images" href="#" target="_blank"><img src="img/inst8.png" alt="inst"></a>
+            <a class="insta-images" href="#" target="_blank"><img src="img/inst9.png" alt="inst"></a>
+          </div>
+          <a class="insta-subtitle" href="#">View more photos</a>
+        </div>
       </div><!--/footer-inner-->
+      <div class="copyright">© 2016 MoGo free PSD template by <span class="cop-red">Laaqiq</span></p></div>
     </div><!--/container-->
   </footer>
   </body>
