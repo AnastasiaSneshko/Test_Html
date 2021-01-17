@@ -1,0 +1,96 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/intro_bg.png) center no-repeat;
+  background-size: cover;
+
+  /*Inner*/
+  &__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__subtitle {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 60px;
+    color: $primaryLight;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  &__title {
+    font-size: 130px;
+    font-weight: 700;
+    color: $primaryLight;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background-color: $primaryLight;
+      margin: 50px auto;
+    }
+  }
+  .intro-button {
+    display: inline-block;
+    vertical-align: top;
+    border: 3px solid $primaryLight;
+    padding: 10px 15px;
+    color: $primaryLight;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.3s linear;
+    &:hover {
+      color: $secondary;
+      background-color: $primaryLight;
+    }
+  }
+  
+  /*Slider*/
+  &__slider {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+  &__slider-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__slider-item {
+    cursor: pointer;
+    position: relative;
+    padding: 20px 0;
+    border-top: 3px solid $primaryLight;
+    width: 23%;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $primaryLight;
+    opacity: 70%;
+    &.active {
+      opacity: 1;
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 70px;
+        height: 3px;
+        background-color: $secondaryRed;
+        top: -3px;
+        left: 0;
+        z-index: 1;
+      }
+    }
+  }
+  .number {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}

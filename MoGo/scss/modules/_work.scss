@@ -1,0 +1,50 @@
+.work {
+  padding-top: 80px;
+  &__gal {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__column {
+    flex: 1 1 0;
+  }
+  &__card {
+    position: relative;
+    background: linear-gradient(to bottom, $secondaryRed, $secondary);
+    &:hover {
+      .image {
+        opacity: 20%;
+      }
+      .info {
+        opacity: 1;
+      }
+    }
+    .image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      transition: 0.3s linear;
+    }
+  }
+  .info {
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s linear;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+    text-align: center;
+    color: $primaryLight;
+    padding: 0 15px;
+    .icon {
+      color: $primaryLight;
+      font-size: 30px;
+    }
+    .title {
+      margin: 15px 0;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+}

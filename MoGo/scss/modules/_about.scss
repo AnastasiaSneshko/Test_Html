@@ -1,0 +1,45 @@
+.about {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card {
+    width: 380px;
+    position: relative;
+    background-color: $secondaryGreen;
+    &:hover {
+      .descrip {
+        opacity: 1;
+      }
+      .image {
+        transform: translate3d(-10px, -10px, 0);
+      }
+      img{
+        opacity: 20%;
+      }
+    }
+  }
+  .image {
+    background: linear-gradient(to bottom, $secondaryRed, $secondary);
+    transition: 0.3s linear;
+  }
+  img {
+    display: block;
+    transition: 0.3s linear;
+  }
+  .descrip {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: 0.3s linear;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+    color: $primaryLight;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+  }
+}

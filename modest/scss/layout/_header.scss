@@ -1,0 +1,39 @@
+.header {
+    background-color: $primaryDark;
+    padding: 25px 0;
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        max-width: 100px;
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        color: $primaryLight2;
+        font-family: "Open Sans";
+        font-size: 14px;
+        text-transform: uppercase;
+        margin: 0 10px;
+        padding: 7px 10px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: border 0.3s;
+        &:last-child {
+            margin: 0 0 0 20px;
+        }
+        &:hover {
+            border-color: $primaryDark2;
+        }
+
+        &--active {
+            border-color: $secondary;
+            color: $secondary;
+        }
+    }
+}

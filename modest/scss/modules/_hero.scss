@@ -1,0 +1,40 @@
+.hero {
+  position: relative;
+  min-height: 660px;
+  background: url(../images/hero-bg.png) center center no-repeat;
+  background-size: cover;
+  display: flex; 
+  align-items: center;
+  .title {
+	margin-bottom: 30px;
+	padding-left: 0;
+  }
+  .text {
+    font-size: 16px;
+    color: $primaryLight3;
+    line-height: 26px;
+    margin-bottom: 40px;
+	}
+	.button {
+    &:last-child {
+      margin-left: 10px;
+    }
+	}
+	
+  .owl-dots {
+		position: absolute;
+		bottom: -170px;
+		right: 180px;
+	  button {
+		 display: inline-block;
+		 width: 13px;
+		 height: 13px;
+		 border-radius: 25px;
+		 border: 2px solid $tertiary;
+		 margin: 0 5px;
+		 &.active {
+			 background-color: white;
+		 }
+		}
+	}
+}

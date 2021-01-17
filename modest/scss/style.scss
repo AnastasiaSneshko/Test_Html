@@ -1,0 +1,15 @@
+//Base
+@import "./base/fonts";
+@import "./base/constants";
+@import "./base/base";
+@import "./base/components";
+
+//Layout 
+@import "./layout/header";
+
+//Modules
+@import "./modules/hero";
+@import "./modules/about";
+@import "./modules/team";
+@import "./modules/_work";
+@import "./modules/touch";

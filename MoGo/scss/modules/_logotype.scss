@@ -1,0 +1,8 @@
+.logotype {
+    background-color: $primaryLight4;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

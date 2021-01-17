@@ -1,0 +1,22 @@
+.design {
+  background: url(../images/design/bg.png) center no-repeat;
+  background-size: cover;
+  padding-bottom: 0;
+  &__devices {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    .ipad {
+      display: block;
+    }
+    .iphone {
+      position: absolute;
+      bottom: -80px;
+      right: 0;
+      z-index: 1;
+      height: 476px;
+      width: 274px;
+    }
+  }
+}

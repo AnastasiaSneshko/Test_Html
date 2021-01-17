@@ -1,0 +1,29 @@
+.services {
+  &__item {
+    display: flex;
+  }
+  &__card {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: row;
+    margin-right: 35px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .image {
+    margin-right: 25px;
+  }
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $primaryDark;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 15px;
+    color: $primary;
+    line-height: 25px;
+  }
+}

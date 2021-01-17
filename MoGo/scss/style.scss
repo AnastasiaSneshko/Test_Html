@@ -1,0 +1,25 @@
+//Base
+@import "./base/base";
+@import "./base/fonts";
+@import "./base/constant";
+@import "./base/components";
+
+//Layout 
+@import "./layout/header";
+@import "./layout/footer";
+
+//Modules
+@import "./modules/intro";
+@import "./modules/about";
+@import "./modules/statistic";
+@import "./modules/services";
+@import "./modules/design";
+@import "./modules/WeDo";
+@import "./modules/comment";
+@import "./modules/team";
+@import "./modules/logotype";
+@import "./modules/work";
+@import "./modules/clients";
+@import "./modules/blog";
+@import "./modules/map";
+

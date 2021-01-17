@@ -1,0 +1,41 @@
+.button {
+    padding: 13px 30px 10px 30px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $tertiary;
+    border: 2px solid $tertiary;
+    display: inline-block;
+    &:hover {
+        border-color: transparent;
+        background: $secondary;
+        color: $tertiary;
+    }
+}
+
+.title {
+	font-size: 36px;
+	text-transform: uppercase;
+    margin-bottom: 60px;
+    padding-left: 20px;
+	&.white {
+		color: $tertiary;
+	}
+	&.gray {
+		color: $primary;
+	}
+	&.line {
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			margin-top: -5px;
+			height: 35px;
+			width: 10px;
+			background-color: $primaryLight4;
+		}
+	}
+}

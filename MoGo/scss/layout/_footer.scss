@@ -1,0 +1,44 @@
+.footer {
+  background-color: $primaryLight4;
+  padding-top: 80px;
+  &__descrip {
+    .logo {
+      font-size: 46px;
+      font-weight: 700;
+      color: $primary2;
+      margin-bottom: 30px;
+    }
+    .text {
+      font-size: 15px;
+      color: $primary;
+      line-height: 25px;
+      margin-bottom: 30px;
+    }
+    .social {
+      color: $primaryDark;
+      margin-bottom: 30px;
+      .head {
+        font-size: 14px;
+        border-bottom: 1px solid $primaryLight2;
+        padding-bottom: 15px;
+      }
+      .bold {
+        font-weight: 700;
+        font-size: 18px;
+      }
+      .content {
+        padding-top: 15px;
+        color: $primary;
+        a {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 18px;
+          color: $secondaryGreen;
+          margin-left: 15px;
+        }
+      }
+    }
+    .subscribe {
+    }
+  }
+}

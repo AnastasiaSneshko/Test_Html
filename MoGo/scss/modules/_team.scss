@@ -1,0 +1,81 @@
+.team {
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card {
+    width: 380px;
+    &:hover {
+      .descrip {
+        opacity: 1;
+      }
+      .image {
+        transform: translate3d(-10px, -10px, 0);
+      }
+      img{
+        opacity: 20%;
+      }
+    }
+  }
+  &__inner {
+    position: relative;
+    background-color: $secondaryGreen;
+    .image {
+      background: linear-gradient(to bottom, $secondaryRed, $secondary);
+      transition: 0.3s linear;
+    }
+    img {
+      display: block;
+      transition: 0.3s linear;
+    }
+    .descrip {
+      position: absolute;
+      width: 100%;
+      opacity: 0;
+      transition: 0.3s linear;
+      top: 50%;
+      left: 0;
+      z-index: 2;
+      transform: translate3d(0, -50%, 0);
+      text-align: center;
+      .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .social-item {
+          width: 30px;
+          height: 30px;
+          background-color: $secondary;
+          border-right: 1px solid $secondaryRed;
+          color: $secondaryRed;
+          padding: 15px;
+          font-size: 30px;
+          line-height: 1;
+          transition: 0.3s linear;
+          &:last-child {
+            border-right: none;
+          }
+          &:hover {
+            background-color: $secondaryRed;
+            color: $primaryLight;
+          }
+        }
+      }
+    }
+  }
+  &__info {
+    text-align: center;
+    margin-top: 30px;
+    .name {
+      color: $primaryDark;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+    .prof {
+      color: $primary;
+      font-size: 14px;
+    }
+  }
+}

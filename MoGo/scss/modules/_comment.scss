@@ -1,0 +1,55 @@
+.comment{
+  background-color: $primaryLight4;
+  &.white {
+    background-color: transparent;
+  }
+  &__rewiews {
+    position: relative;
+  }
+  &__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    &.prew {
+      left: 25px;
+    }
+    &.next{
+      right: 25px;
+    }
+  }
+  &__rewiews-item {
+    padding: 0 110px;
+    display: flex;
+    align-items: center;
+  }
+  &__rewiews-image {
+    padding: 40px;
+    border: 3px solid $secondaryGreen;
+    margin-right: 50px;
+    &.rewiew {
+      border: 0;
+    }
+
+  }
+  &__rewiews-text {
+    color: $primary;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+  &__rewiews-author {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: $primaryDark;
+    &:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 60px;
+      height: 3px;
+      margin-right: 10px;
+      background-color: $secondaryRed;
+    }
+   }
+}

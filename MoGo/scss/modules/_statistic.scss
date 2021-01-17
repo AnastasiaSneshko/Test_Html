@@ -1,0 +1,25 @@
+.statistic {
+  background-color: $secondaryGreen;
+  .item {
+    display: flex;
+  }
+  &__card {
+    flex: 1 1 0;
+    padding: 70px 25px;
+    text-align: center;
+    color: $primaryLight;
+    border-left: 1px solid #b5eae0;
+    &:last-child {
+      border-right: 1px solid #b5eae0;
+    }
+  }
+  &__number {
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  &__text {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
